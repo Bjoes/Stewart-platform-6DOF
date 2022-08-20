@@ -15,9 +15,9 @@ const unsigned int pulseLength = 5;
 const unsigned long baudRate = 115200;
 
 // for sfx100 with pn98 = 10 (pulse multiplier)
-const unsigned int minPos = 0;
-const unsigned int centerPos = 11000;
-const unsigned int maxPos = 22000;
+const unsigned int minPos = 2768;
+const unsigned int centerPos = 30000;
+const unsigned int maxPos = 62768;
 
 const unsigned int startMark = 255;
 
@@ -74,8 +74,8 @@ void setup() {
   initTimers();
 
   for (int i = 0; i < motors; i++) {
-    targetPos[i] = 0;
-    currentPos[i] = 0;
+    targetPos[i] = minPos;
+    currentPos[i] = minPos;
     incPos[i] = 0;
     pinMode(pulse[i], OUTPUT);
     pinMode(dir[i], OUTPUT);
@@ -113,10 +113,13 @@ void loop() {
 
 
 unsigned int mapToRange(unsigned int pos) {
-  unsigned int mappedPos = pos / 3;
+  unsigned int mappedPos = pos;
   if (mappedPos > maxPos) {
     return maxPos;
   }
+  if (mappedPos < minPos) {
+return minPos;
+}
   return mappedPos;
 }
 
