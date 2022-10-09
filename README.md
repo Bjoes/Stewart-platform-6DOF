@@ -39,30 +39,34 @@ Motor 1
  3              12
  4              A0
  6              A4
- 23             18 (via 2.2kohm resistor and 0.1uF capacitor to GND)
+ #23            18 (via 2.2kohm resistor and 0.1uF capacitor to GND)
  9              5Vcc
  5,10,14        GND
+ 11             A8
 
 Motor 2
  3              2
  4              A1
  6              A5
- 23             19 (via 2.2kohm resistor and 0.1uF capacitor to GND)
+ #23            19 (via 2.2kohm resistor and 0.1uF capacitor to GND)
  9              5Vcc
  5,10,14        GND
+ 11             A9
 
 Motor 3
  3              7
  4              A2
  6              A6
- 23             20 (via 2.2kohm resistor and 0.1uF capacitor to GND)
+ #23            20 (via 2.2kohm resistor and 0.1uF capacitor to GND)
  9              5Vcc
  5,10,14        GND
+ 11             A10
 
 Motor 4
  3              45
  4              A3
  6              A7
- 23             21 (via 2.2kohm resistor and 0.1uF capacitor to GND)
+ #23             21 (via 2.2kohm resistor and 0.1uF capacitor to GND)
  9              5Vcc
  5,10,14        GND
+ 11             A11
