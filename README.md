@@ -66,4 +66,3 @@ Motor 4
  23             21 (via 2.2kohm resistor and 0.1uF capacitor to GND)
  9              5Vcc
  5,10,14        GND
-  
