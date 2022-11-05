@@ -73,3 +73,24 @@ Motor 4
  5,10,14        GND
  11             A11
 ```
+
+
+DB25
+3 = Blue
+4 = Brown
+5 = Brown/white
+6 = Green
+9 = Orange
+10 = Blue/white
+14 = Green/white
+11 = Orange/white
+
+GX16 8 PIN
+1 = Blue
+2 = Brown
+3 = Brown/white
+4 = Green
+5 = Orange
+6 = Blue/white
+7 = Green/white
+8 = Orange/white
