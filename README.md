@@ -74,7 +74,7 @@ Motor 4
  11             A11
 ```
 
-
+```
 DB25
 3 = Blue
 4 = Brown
@@ -94,3 +94,4 @@ GX16 8 PIN
 6 = Blue/white
 7 = Green/white
 8 = Orange/white
+```
