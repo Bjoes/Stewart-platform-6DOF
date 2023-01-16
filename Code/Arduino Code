@@ -53,8 +53,8 @@ byte dir[] = {dir0, dir1, dir2, dir3};
 byte pulse[] = {ocr1bPin, ocr3bPin, ocr4bPin, ocr5bPin};
 
 // fast digital write for direction pins
-#define setDirDown(b) PORTC |= (b)
-#define setDirUp(b) PORTC &=~ (b)
+#define setDirDown(b) PORTC &=~ (b)
+#define setDirUp(b) PORTC |= (b)
 
 const byte dir0bit = B10000000;
 const byte dir1bit = B01000000;
