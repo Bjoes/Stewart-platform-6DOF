@@ -4,8 +4,18 @@ ATMEGA2560 Servo controller for use with FlyPT mover and AASD-15A drives
 600mm travel actuator with SF1610 ball screw
 Scale = 0.9155
 
+2 arduino mega are needed, each controlling 3 servoes. This is due to the mega only have 4 16 bit timers. 
+Therefore we can only control 4 servoes pr arduino in 16bit resolution.
+We will then have 2 channels leftover on each arduino which can be used for seatbelt tensioner etc.
+
 ```
+flypt settings for first output
 "<255><255><a1><a2><a3><0><0>"
+
+flypt settings for second output
+"<255><255><a4><a5><a6><0><0>"
+
+In case you wanna use the last 2 axis you could replace <0><0> in both strings with <a7> and <a8> to have 8 axis.
 ```
 ```
 Pn2 = 2
@@ -28,19 +38,19 @@ AASD-15A CN2 DB25 control signal connector explained:
  p3 - pwm signal
  p4 - direction
  p5 - GND
- p6 - enable (motor ON)
+ p6 - enable (motor ON) - Break this connection to stop motors (e-stop)
  p9 - 5Vcc
 p10 - GND
 p11 - ready (motor present and ready - not used for now)
 p14 - GND
-p23 - torque reached
+p23 - torque reached (not used)
 
 AASD-15A
 CN2 DB25 pin / Arduino pin
 Motor 1
  3              12
  4              30
- 6              A4
+ 6              GND
  #23            18 (via 2.2kohm resistor and 0.1uF capacitor to GND)
  9              5Vcc
  5,10,14        GND
@@ -49,7 +59,7 @@ Motor 1
 Motor 2
  3              2
  4              31
- 6              A5
+ 6              GND
  #23            19 (via 2.2kohm resistor and 0.1uF capacitor to GND)
  9              5Vcc
  5,10,14        GND
@@ -58,7 +68,7 @@ Motor 2
 Motor 3
  3              7
  4              32
- 6              A6
+ 6              GND
  #23            20 (via 2.2kohm resistor and 0.1uF capacitor to GND)
  9              5Vcc
  5,10,14        GND
@@ -67,7 +77,7 @@ Motor 3
 Motor 4
  3              45
  4              33
- 6              A7
+ 6              GND
  #23             21 (via 2.2kohm resistor and 0.1uF capacitor to GND)
  9              5Vcc
  5,10,14        GND
