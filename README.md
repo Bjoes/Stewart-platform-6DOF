@@ -39,7 +39,7 @@ AASD-15A
 CN2 DB25 pin / Arduino pin
 Motor 1
  3              12
- 4              A0
+ 4              30
  6              A4
  #23            18 (via 2.2kohm resistor and 0.1uF capacitor to GND)
  9              5Vcc
@@ -48,7 +48,7 @@ Motor 1
 
 Motor 2
  3              2
- 4              A1
+ 4              31
  6              A5
  #23            19 (via 2.2kohm resistor and 0.1uF capacitor to GND)
  9              5Vcc
@@ -57,7 +57,7 @@ Motor 2
 
 Motor 3
  3              7
- 4              A2
+ 4              32
  6              A6
  #23            20 (via 2.2kohm resistor and 0.1uF capacitor to GND)
  9              5Vcc
@@ -66,7 +66,7 @@ Motor 3
 
 Motor 4
  3              45
- 4              A3
+ 4              33
  6              A7
  #23             21 (via 2.2kohm resistor and 0.1uF capacitor to GND)
  9              5Vcc
