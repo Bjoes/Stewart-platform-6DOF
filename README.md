@@ -1,4 +1,4 @@
-6 DOF stewart platform controlled by 2 arduino mega 2560.
+6 DOF stewart platform controlled by 2 arduino mega 2560 by FlyPT.
 
 ![simrig 6dof stewart leg acc v4 v19](https://github.com/Bjoes/Stewart-platform-6DOF/assets/79850208/ee65c17e-6068-451a-889e-bb3d4af36408)
 
