@@ -9,6 +9,9 @@ Build with aluminium extrusions, CNC or laster cut brackets and 3d printed parts
 https://departedreality.com/products/dr-diy-ps
 
 ## Pictures
+
+https://www.youtube.com/watch?v=DjjFybpQpvs
+
 ![simrig 6dof stewart leg acc v4 v19](https://github.com/Bjoes/Stewart-platform-6DOF/assets/79850208/ee65c17e-6068-451a-889e-bb3d4af36408)
 
 ![Angle1_exported_79233](https://github.com/Bjoes/Stewart-platform-6DOF/assets/79850208/090e5da9-bcdc-47ca-965d-4d322792c09c)
