@@ -1,9 +1,15 @@
-# 6 DOF stewart platform
-Controlled by 2 arduino mega 2560 in FlyPT.
+# 6 DOF Simulator with arduino controller for FlyPT Mover
+Controlled by 2 arduino mega 2560 in FlyPT Mover. (see code and documentations in Arduino folder)
 
 AASD-15a drives with 80st-m02430 servoes
 
-Build with aluminium extrusions, CNC or laster cut brackets and 3d printed parts.
+Fully modular, build with aluminium extrusions, laser cut brackets and 3d printed parts.
+
+Everything is avaiable in the CAD drawings except nuts, bolts and bearings for the frame, joints and brackets. (WIP for BOM)
+
+For the actuator design follow Departed reality's design. Only thing modified from his files are the rod ends. 
+I use a U-joint at the bottom to prevent the actuator from rotating, which are shown in the cad drawings on this page. 
+This requires slight modification on the bottom part that fastens the u-joint to the actuator.
 
 ## Departed reality actuator design
 https://departedreality.com/products/dr-diy-ps
