@@ -17,7 +17,7 @@ const unsigned long baudRate = 115200;
 
 // for sfx100 with pn98 = 10 (pulse multiplier)
 const unsigned int minPos = 2768;
-const unsigned int centerPos = 30000;
+const unsigned int centerPos = 32768;
 const unsigned int maxPos = 62768;
 
 const unsigned int startMark = 255;
